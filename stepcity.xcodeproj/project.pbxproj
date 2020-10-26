@@ -17,6 +17,7 @@
 		3397DE42253B5C9500C1A7A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3397DE40253B5C9500C1A7A7 /* Main.storyboard */; };
 		3397DE44253B5C9C00C1A7A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3397DE43253B5C9C00C1A7A7 /* Assets.xcassets */; };
 		3397DE47253B5C9C00C1A7A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3397DE45253B5C9C00C1A7A7 /* LaunchScreen.storyboard */; };
+		33E0AC15254796C100FF5CF3 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E0AC14254796C100FF5CF3 /* LoadingViewController.swift */; };
 		E627EBDAA2B85C33347DFE7E /* Pods_stepcity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD18D8E789F364BE121DFE57 /* Pods_stepcity.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		3397DE43253B5C9C00C1A7A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3397DE46253B5C9C00C1A7A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3397DE48253B5C9C00C1A7A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33E0AC14254796C100FF5CF3 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		8EB3EBA22ECCC066FCFEE7FD /* Pods-stepcity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stepcity.release.xcconfig"; path = "Target Support Files/Pods-stepcity/Pods-stepcity.release.xcconfig"; sourceTree = "<group>"; };
 		DD18D8E789F364BE121DFE57 /* Pods_stepcity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stepcity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -64,6 +66,7 @@
 				333056982544F17900D557A5 /* SignUpViewController.swift */,
 				3330569A2544F18D00D557A5 /* LoginViewController.swift */,
 				3330569C2544F19C00D557A5 /* HomeViewController.swift */,
+				33E0AC14254796C100FF5CF3 /* LoadingViewController.swift */,
 			);
 			path = "Signup-Login";
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33E0AC15254796C100FF5CF3 /* LoadingViewController.swift in Sources */,
 				3397DE3F253B5C9500C1A7A7 /* ViewController.swift in Sources */,
 				3397DE3B253B5C9500C1A7A7 /* AppDelegate.swift in Sources */,
 				333056992544F17900D557A5 /* SignUpViewController.swift in Sources */,

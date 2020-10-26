@@ -61,7 +61,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gb7-bO-q3e" customClass="DesignableView" customModule="stepcity" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="382" height="50"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C5Q-Sn-yOr" userLabel="username">
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C5Q-Sn-yOr" userLabel="email">
                                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="qYm-ok-eFc"/>
@@ -143,6 +143,9 @@
                                                         <integer key="value" value="25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="JXH-oO-FGx" kind="presentation" modalPresentationStyle="fullScreen" id="VZ3-kC-7f0"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ERROR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O76-BQ-Kf8">
                                                 <rect key="frame" x="16" y="366" width="382" height="20.5"/>
@@ -203,10 +206,10 @@
                         <viewLayoutGuide key="safeArea" id="BZl-Pe-cQU"/>
                     </view>
                     <connections>
+                        <outlet property="emailText" destination="C5Q-Sn-yOr" id="4Y0-t2-nKM"/>
                         <outlet property="errorLabel" destination="O76-BQ-Kf8" id="Xsv-Ni-skp"/>
                         <outlet property="passwordText" destination="JhH-V8-Esm" id="m7e-7j-cQW"/>
                         <outlet property="signinButton" destination="jVm-Zd-VXl" id="eZp-AQ-kUO"/>
-                        <outlet property="usernameText" destination="C5Q-Sn-yOr" id="tli-nP-1tv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PRr-Yn-of6" sceneMemberID="firstResponder"/>
@@ -226,6 +229,7 @@
                         <segue destination="kfV-Lf-ghB" kind="relationship" relationship="viewControllers" id="Bur-ce-yep"/>
                         <segue destination="kcY-tw-Emp" kind="relationship" relationship="viewControllers" id="XyI-UU-Fnk"/>
                         <segue destination="s8u-Vt-9Ek" kind="relationship" relationship="viewControllers" id="Dgz-Ti-s0x"/>
+                        <segue destination="Co2-52-vNi" kind="relationship" relationship="viewControllers" id="L4C-1C-y6H"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vy4-Ra-jpJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -265,7 +269,7 @@
             </objects>
             <point key="canvasLocation" x="-897" y="1148"/>
         </scene>
-        <!--friends-->
+        <!--build-->
         <scene sceneID="6t0-SD-uyl">
             <objects>
                 <viewController id="93e-o5-Flq" sceneMemberID="viewController">
@@ -276,13 +280,13 @@
                         <color key="tintColor" red="0.6423685341918014" green="0.7381380561485521" blue="0.95073672279792742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="k9M-XV-mh2"/>
                     </view>
-                    <navigationItem key="navigationItem" title="friends" largeTitleDisplayMode="always" id="OrV-yb-gJ4"/>
+                    <navigationItem key="navigationItem" title="build" largeTitleDisplayMode="always" id="OrV-yb-gJ4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wLf-qi-HH0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-110" y="1148"/>
         </scene>
-        <!--settings-->
+        <!--friends-->
         <scene sceneID="4QJ-Hj-Ne2">
             <objects>
                 <viewController id="VPO-uU-wn8" sceneMemberID="viewController">
@@ -292,7 +296,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="fqk-fW-des"/>
                     </view>
-                    <navigationItem key="navigationItem" title="settings" id="PA9-jq-hxX"/>
+                    <navigationItem key="navigationItem" title="friends" id="PA9-jq-hxX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dog-44-IHf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -557,6 +561,39 @@
                 <exit id="erB-Pa-KPL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-110" y="-960"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="4Ht-c6-MpP">
+            <objects>
+                <navigationController id="Co2-52-vNi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="QGr-l7-Ubq"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fjb-MZ-0pO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6GI-hA-plF" kind="relationship" relationship="rootViewController" id="LbX-uf-lIb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mAa-zO-MNB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1516" y="425"/>
+        </scene>
+        <!--settings-->
+        <scene sceneID="wCW-LC-kWq">
+            <objects>
+                <viewController id="6GI-hA-plF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LNd-Gz-tkg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="q1s-Iw-KJF"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="settings" id="JI2-CB-DAx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uTe-Lv-cwK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1516" y="1148"/>
         </scene>
     </scenes>
     <resources>
