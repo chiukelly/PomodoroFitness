@@ -11,6 +11,7 @@
 		3330569B2544F18D00D557A5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3330569A2544F18D00D557A5 /* LoginViewController.swift */; };
 		3330569D2544F19C00D557A5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3330569C2544F19C00D557A5 /* HomeViewController.swift */; };
 		334809D525450DB7006AA26E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 334809D425450DB7006AA26E /* GoogleService-Info.plist */; };
+		336986752548A190000C9647 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336986742548A190000C9647 /* Constants.swift */; };
 		3397DE3B253B5C9500C1A7A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3397DE3A253B5C9500C1A7A7 /* AppDelegate.swift */; };
 		3397DE3D253B5C9500C1A7A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3397DE3C253B5C9500C1A7A7 /* SceneDelegate.swift */; };
 		3397DE3F253B5C9500C1A7A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3397DE3E253B5C9500C1A7A7 /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 		3330569A2544F18D00D557A5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3330569C2544F19C00D557A5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		334809D425450DB7006AA26E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		336986742548A190000C9647 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = stepcity/Constants.swift; sourceTree = SOURCE_ROOT; };
 		3397DE37253B5C9500C1A7A7 /* stepcity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stepcity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3397DE3A253B5C9500C1A7A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3397DE3C253B5C9500C1A7A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,15 @@
 			path = "Signup-Login";
 			sourceTree = "<group>";
 		};
+		336986732548A167000C9647 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				334809D425450DB7006AA26E /* GoogleService-Info.plist */,
+				336986742548A190000C9647 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		3397DE2E253B5C9500C1A7A7 = {
 			isa = PBXGroup;
 			children = (
@@ -92,7 +103,7 @@
 		3397DE39253B5C9500C1A7A7 /* stepcity */ = {
 			isa = PBXGroup;
 			children = (
-				334809D425450DB7006AA26E /* GoogleService-Info.plist */,
+				336986732548A167000C9647 /* Helpers */,
 				3330569E2544F1AC00D557A5 /* Signup-Login */,
 				3397DE3A253B5C9500C1A7A7 /* AppDelegate.swift */,
 				3397DE3E253B5C9500C1A7A7 /* ViewController.swift */,
@@ -237,6 +248,7 @@
 				3330569B2544F18D00D557A5 /* LoginViewController.swift in Sources */,
 				3397DE3D253B5C9500C1A7A7 /* SceneDelegate.swift in Sources */,
 				3330569D2544F19C00D557A5 /* HomeViewController.swift in Sources */,
+				336986752548A190000C9647 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
