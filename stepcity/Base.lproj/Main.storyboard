@@ -242,11 +242,11 @@
             </objects>
             <point key="canvasLocation" x="-86" y="-291"/>
         </scene>
-        <!--Item-->
+        <!--My City-->
         <scene sceneID="55Z-ea-DDc">
             <objects>
                 <navigationController id="kfV-Lf-ghB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="X8C-Vd-4SK"/>
+                    <tabBarItem key="tabBarItem" title="My City" id="X8C-Vd-4SK"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="suR-s6-vme">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -259,7 +259,7 @@
             </objects>
             <point key="canvasLocation" x="-923" y="425"/>
         </scene>
-        <!--my city-->
+        <!--My City-->
         <scene sceneID="ZYh-VO-mUt">
             <objects>
                 <viewController id="RDi-z7-xAp" sceneMemberID="viewController">
@@ -269,13 +269,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Chc-rm-3gB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="my city" id="IoL-f0-CS5"/>
+                    <navigationItem key="navigationItem" title="My City" id="IoL-f0-CS5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vVt-Uf-uhN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-897" y="1148"/>
         </scene>
-        <!--build-->
+        <!--Build-->
         <scene sceneID="6t0-SD-uyl">
             <objects>
                 <viewController id="93e-o5-Flq" sceneMemberID="viewController">
@@ -286,13 +286,13 @@
                         <color key="tintColor" red="0.6423685341918014" green="0.7381380561485521" blue="0.95073672279792742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="k9M-XV-mh2"/>
                     </view>
-                    <navigationItem key="navigationItem" title="build" largeTitleDisplayMode="always" id="OrV-yb-gJ4"/>
+                    <navigationItem key="navigationItem" title="Build" largeTitleDisplayMode="always" id="OrV-yb-gJ4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wLf-qi-HH0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-110" y="1148"/>
         </scene>
-        <!--friends-->
+        <!--Friends-->
         <scene sceneID="4QJ-Hj-Ne2">
             <objects>
                 <viewController id="VPO-uU-wn8" sceneMemberID="viewController">
@@ -302,17 +302,17 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="fqk-fW-des"/>
                     </view>
-                    <navigationItem key="navigationItem" title="friends" id="PA9-jq-hxX"/>
+                    <navigationItem key="navigationItem" title="Friends" id="PA9-jq-hxX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dog-44-IHf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="690" y="1148"/>
         </scene>
-        <!--Item-->
+        <!--Friends-->
         <scene sceneID="qlH-p2-fNp">
             <objects>
                 <navigationController id="s8u-Vt-9Ek" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="sA1-Kz-MgD"/>
+                    <tabBarItem key="tabBarItem" title="Friends" id="sA1-Kz-MgD"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OfD-Wx-Bnb">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -325,11 +325,11 @@
             </objects>
             <point key="canvasLocation" x="690" y="425"/>
         </scene>
-        <!--Item-->
+        <!--Build-->
         <scene sceneID="Ljr-JE-RCa">
             <objects>
                 <navigationController id="kcY-tw-Emp" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="fTd-zi-KWV"/>
+                    <tabBarItem key="tabBarItem" title="Build" id="fTd-zi-KWV"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bQT-KI-rEr">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -541,6 +541,16 @@
                                     </label>
                                     <view contentMode="scaleToFill" verticalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="dv3-2m-6dD">
                                         <rect key="frame" x="16" y="598" width="382" height="202"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZu-Jr-Qdz">
+                                                <rect key="frame" x="117" y="8" width="175" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Click to go to next screen"/>
+                                                <connections>
+                                                    <segue destination="JXH-oO-FGx" kind="presentation" modalPresentationStyle="fullScreen" id="bV3-tV-J4E"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     </view>
                                 </subviews>
@@ -569,7 +579,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kFE-tJ-XiK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="erB-Pa-KPL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-110" y="-960"/>
+            <point key="canvasLocation" x="-110.14492753623189" y="-960.26785714285711"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gMs-3a-YEQ">
@@ -586,11 +596,11 @@
             </objects>
             <point key="canvasLocation" x="735" y="-960"/>
         </scene>
-        <!--Item-->
+        <!--Settings-->
         <scene sceneID="4Ht-c6-MpP">
             <objects>
                 <navigationController id="Co2-52-vNi" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="QGr-l7-Ubq"/>
+                    <tabBarItem key="tabBarItem" title="Settings" id="QGr-l7-Ubq"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fjb-MZ-0pO">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -603,7 +613,7 @@
             </objects>
             <point key="canvasLocation" x="1516" y="425"/>
         </scene>
-        <!--settings-->
+        <!--Settings-->
         <scene sceneID="wCW-LC-kWq">
             <objects>
                 <viewController id="6GI-hA-plF" sceneMemberID="viewController">
@@ -613,13 +623,16 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="q1s-Iw-KJF"/>
                     </view>
-                    <navigationItem key="navigationItem" title="settings" id="JI2-CB-DAx"/>
+                    <navigationItem key="navigationItem" title="Settings" id="JI2-CB-DAx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uTe-Lv-cwK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1516" y="1148"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="bV3-tV-J4E"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="maincity" width="496" height="355"/>
         <image name="square.stack.3d.up.fill" catalog="system" width="128" height="124"/>
