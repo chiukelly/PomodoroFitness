@@ -136,9 +136,6 @@
                                                         <integer key="value" value="25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <segue destination="JXH-oO-FGx" kind="presentation" modalPresentationStyle="fullScreen" id="VZ3-kC-7f0"/>
-                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ERROR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O76-BQ-Kf8">
                                                 <rect key="frame" x="16" y="437" width="382" height="20.5"/>
@@ -362,11 +359,11 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TeZ-Nk-BzL">
                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="46"/>
                                                 <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="30"/>
-                                                <state key="normal">
+                                                <state key="normal" title="x">
                                                     <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="erB-Pa-KPL" kind="unwind" unwindAction="unwind:" id="Mlo-ec-8gj"/>
+                                                    <segue destination="APY-Fp-Rjp" kind="presentation" modalPresentationStyle="fullScreen" id="T8T-Lz-mg4"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -519,7 +516,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="wyp-qD-6HB"/>
                                         </constraints>
-                                        <state key="normal" title="continue">
+                                        <state key="normal" title="sign up!">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -576,7 +573,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kFE-tJ-XiK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="erB-Pa-KPL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-110.14492753623189" y="-960.26785714285711"/>
         </scene>
@@ -629,9 +625,6 @@
             <point key="canvasLocation" x="1516" y="1148"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="VZ3-kC-7f0"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="maincity" width="496" height="355"/>
     </resources>
