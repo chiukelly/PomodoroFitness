@@ -18,6 +18,22 @@
 		3397DE42253B5C9500C1A7A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3397DE40253B5C9500C1A7A7 /* Main.storyboard */; };
 		3397DE44253B5C9C00C1A7A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3397DE43253B5C9C00C1A7A7 /* Assets.xcassets */; };
 		3397DE47253B5C9C00C1A7A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3397DE45253B5C9C00C1A7A7 /* LaunchScreen.storyboard */; };
+		33D261CB255704F400A08091 /* PixelOperatorSC.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33D261BB255704F400A08091 /* PixelOperatorSC.ttf */; };
+		33D261CC255704F400A08091 /* PixelOperatorMono8.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33D261BC255704F400A08091 /* PixelOperatorMono8.ttf */; };
+		33D261CD255704F400A08091 /* PixelOperator8.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33D261BD255704F400A08091 /* PixelOperator8.ttf */; };
+		33D261CE255704F400A08091 /* PixelOperatorMono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33D261BE255704F400A08091 /* PixelOperatorMono-Bold.ttf */; };
+		33D261CF255704F400A08091 /* PixelOperator-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33D261BF255704F400A08091 /* PixelOperator-Bold.ttf */; };
+		33D261D0255704F400A08091 /* PixelOperator8-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33D261C0255704F400A08091 /* PixelOperator8-Bold.ttf */; };
+		33D261D1255704F400A08091 /* PixelOperatorHBSC.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33D261C1255704F400A08091 /* PixelOperatorHBSC.ttf */; };
+		33D261D2255704F400A08091 /* PixelOperator.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33D261C2255704F400A08091 /* PixelOperator.ttf */; };
+		33D261D3255704F400A08091 /* PixelOperatorHB8.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33D261C3255704F400A08091 /* PixelOperatorHB8.ttf */; };
+		33D261D4255704F400A08091 /* PixelOperatorMonoHB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33D261C4255704F400A08091 /* PixelOperatorMonoHB.ttf */; };
+		33D261D5255704F400A08091 /* PixelOperatorMono.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33D261C5255704F400A08091 /* PixelOperatorMono.ttf */; };
+		33D261D6255704F400A08091 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 33D261C6255704F400A08091 /* LICENSE.txt */; };
+		33D261D7255704F400A08091 /* PixelOperatorHB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33D261C7255704F400A08091 /* PixelOperatorHB.ttf */; };
+		33D261D8255704F400A08091 /* PixelOperatorMonoHB8.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33D261C8255704F400A08091 /* PixelOperatorMonoHB8.ttf */; };
+		33D261D9255704F400A08091 /* PixelOperatorSC-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33D261C9255704F400A08091 /* PixelOperatorSC-Bold.ttf */; };
+		33D261DA255704F400A08091 /* PixelOperatorMono8-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33D261CA255704F400A08091 /* PixelOperatorMono8-Bold.ttf */; };
 		33E0AC15254796C100FF5CF3 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E0AC14254796C100FF5CF3 /* LoadingViewController.swift */; };
 		E627EBDAA2B85C33347DFE7E /* Pods_stepcity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD18D8E789F364BE121DFE57 /* Pods_stepcity.framework */; };
 /* End PBXBuildFile section */
@@ -37,6 +53,22 @@
 		3397DE43253B5C9C00C1A7A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3397DE46253B5C9C00C1A7A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3397DE48253B5C9C00C1A7A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33D261BB255704F400A08091 /* PixelOperatorSC.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PixelOperatorSC.ttf; sourceTree = "<group>"; };
+		33D261BC255704F400A08091 /* PixelOperatorMono8.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PixelOperatorMono8.ttf; sourceTree = "<group>"; };
+		33D261BD255704F400A08091 /* PixelOperator8.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PixelOperator8.ttf; sourceTree = "<group>"; };
+		33D261BE255704F400A08091 /* PixelOperatorMono-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PixelOperatorMono-Bold.ttf"; sourceTree = "<group>"; };
+		33D261BF255704F400A08091 /* PixelOperator-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PixelOperator-Bold.ttf"; sourceTree = "<group>"; };
+		33D261C0255704F400A08091 /* PixelOperator8-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PixelOperator8-Bold.ttf"; sourceTree = "<group>"; };
+		33D261C1255704F400A08091 /* PixelOperatorHBSC.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PixelOperatorHBSC.ttf; sourceTree = "<group>"; };
+		33D261C2255704F400A08091 /* PixelOperator.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PixelOperator.ttf; sourceTree = "<group>"; };
+		33D261C3255704F400A08091 /* PixelOperatorHB8.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PixelOperatorHB8.ttf; sourceTree = "<group>"; };
+		33D261C4255704F400A08091 /* PixelOperatorMonoHB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PixelOperatorMonoHB.ttf; sourceTree = "<group>"; };
+		33D261C5255704F400A08091 /* PixelOperatorMono.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PixelOperatorMono.ttf; sourceTree = "<group>"; };
+		33D261C6255704F400A08091 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		33D261C7255704F400A08091 /* PixelOperatorHB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PixelOperatorHB.ttf; sourceTree = "<group>"; };
+		33D261C8255704F400A08091 /* PixelOperatorMonoHB8.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PixelOperatorMonoHB8.ttf; sourceTree = "<group>"; };
+		33D261C9255704F400A08091 /* PixelOperatorSC-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PixelOperatorSC-Bold.ttf"; sourceTree = "<group>"; };
+		33D261CA255704F400A08091 /* PixelOperatorMono8-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PixelOperatorMono8-Bold.ttf"; sourceTree = "<group>"; };
 		33E0AC14254796C100FF5CF3 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		8EB3EBA22ECCC066FCFEE7FD /* Pods-stepcity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stepcity.release.xcconfig"; path = "Target Support Files/Pods-stepcity/Pods-stepcity.release.xcconfig"; sourceTree = "<group>"; };
 		DD18D8E789F364BE121DFE57 /* Pods_stepcity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stepcity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +108,7 @@
 		336986732548A167000C9647 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				33D261BA255704F400A08091 /* pixel_operator */,
 				334809D425450DB7006AA26E /* GoogleService-Info.plist */,
 				336986742548A190000C9647 /* Constants.swift */,
 			);
@@ -114,6 +147,29 @@
 				3397DE48253B5C9C00C1A7A7 /* Info.plist */,
 			);
 			path = stepcity;
+			sourceTree = "<group>";
+		};
+		33D261BA255704F400A08091 /* pixel_operator */ = {
+			isa = PBXGroup;
+			children = (
+				33D261BB255704F400A08091 /* PixelOperatorSC.ttf */,
+				33D261BC255704F400A08091 /* PixelOperatorMono8.ttf */,
+				33D261BD255704F400A08091 /* PixelOperator8.ttf */,
+				33D261BE255704F400A08091 /* PixelOperatorMono-Bold.ttf */,
+				33D261BF255704F400A08091 /* PixelOperator-Bold.ttf */,
+				33D261C0255704F400A08091 /* PixelOperator8-Bold.ttf */,
+				33D261C1255704F400A08091 /* PixelOperatorHBSC.ttf */,
+				33D261C2255704F400A08091 /* PixelOperator.ttf */,
+				33D261C3255704F400A08091 /* PixelOperatorHB8.ttf */,
+				33D261C4255704F400A08091 /* PixelOperatorMonoHB.ttf */,
+				33D261C5255704F400A08091 /* PixelOperatorMono.ttf */,
+				33D261C6255704F400A08091 /* LICENSE.txt */,
+				33D261C7255704F400A08091 /* PixelOperatorHB.ttf */,
+				33D261C8255704F400A08091 /* PixelOperatorMonoHB8.ttf */,
+				33D261C9255704F400A08091 /* PixelOperatorSC-Bold.ttf */,
+				33D261CA255704F400A08091 /* PixelOperatorMono8-Bold.ttf */,
+			);
+			path = pixel_operator;
 			sourceTree = "<group>";
 		};
 		F7494FBF458DCF517E6E02DA /* Pods */ = {
@@ -185,10 +241,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33D261D4255704F400A08091 /* PixelOperatorMonoHB.ttf in Resources */,
 				3397DE47253B5C9C00C1A7A7 /* LaunchScreen.storyboard in Resources */,
+				33D261D3255704F400A08091 /* PixelOperatorHB8.ttf in Resources */,
+				33D261D0255704F400A08091 /* PixelOperator8-Bold.ttf in Resources */,
+				33D261DA255704F400A08091 /* PixelOperatorMono8-Bold.ttf in Resources */,
+				33D261CB255704F400A08091 /* PixelOperatorSC.ttf in Resources */,
+				33D261D8255704F400A08091 /* PixelOperatorMonoHB8.ttf in Resources */,
+				33D261D7255704F400A08091 /* PixelOperatorHB.ttf in Resources */,
+				33D261CF255704F400A08091 /* PixelOperator-Bold.ttf in Resources */,
 				334809D525450DB7006AA26E /* GoogleService-Info.plist in Resources */,
+				33D261CE255704F400A08091 /* PixelOperatorMono-Bold.ttf in Resources */,
+				33D261D1255704F400A08091 /* PixelOperatorHBSC.ttf in Resources */,
+				33D261CD255704F400A08091 /* PixelOperator8.ttf in Resources */,
+				33D261D5255704F400A08091 /* PixelOperatorMono.ttf in Resources */,
 				3397DE44253B5C9C00C1A7A7 /* Assets.xcassets in Resources */,
+				33D261D6255704F400A08091 /* LICENSE.txt in Resources */,
+				33D261D9255704F400A08091 /* PixelOperatorSC-Bold.ttf in Resources */,
 				3397DE42253B5C9500C1A7A7 /* Main.storyboard in Resources */,
+				33D261CC255704F400A08091 /* PixelOperatorMono8.ttf in Resources */,
+				33D261D2255704F400A08091 /* PixelOperator.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
