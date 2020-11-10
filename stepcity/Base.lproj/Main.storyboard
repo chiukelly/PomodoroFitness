@@ -141,6 +141,7 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="loginTapped:" destination="APY-Fp-Rjp" eventType="touchUpInside" id="F3z-YM-1hV"/>
+                                                    <segue destination="JXH-oO-FGx" kind="presentation" identifier="loginSequeIdentifier" modalPresentationStyle="fullScreen" id="gU3-7s-3iX"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ERROR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O76-BQ-Kf8">
@@ -640,6 +641,9 @@
             <point key="canvasLocation" x="1516" y="1148"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="gU3-7s-3iX"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="maincity" width="496" height="355"/>
     </resources>
