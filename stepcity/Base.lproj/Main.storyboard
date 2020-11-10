@@ -141,7 +141,7 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="loginTapped:" destination="APY-Fp-Rjp" eventType="touchUpInside" id="F3z-YM-1hV"/>
-                                                    <segue destination="JXH-oO-FGx" kind="presentation" identifier="loginSequeIdentifier" modalPresentationStyle="fullScreen" id="gU3-7s-3iX"/>
+                                                    <segue destination="JXH-oO-FGx" kind="presentation" identifier="loginSegueIdentifier" modalPresentationStyle="fullScreen" id="gU3-7s-3iX"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ERROR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O76-BQ-Kf8">
@@ -542,6 +542,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="signupTapped:" destination="dUW-Q7-OnK" eventType="touchUpInside" id="uHa-Pn-Cat"/>
+                                            <segue destination="JXH-oO-FGx" kind="presentation" identifier="signupSegueIdentifier" modalPresentationStyle="fullScreen" id="5bt-vi-YK4"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ERROR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ob-H1-mme">
@@ -553,16 +554,6 @@
                                     </label>
                                     <view contentMode="scaleToFill" verticalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="dv3-2m-6dD">
                                         <rect key="frame" x="16" y="598" width="382" height="212"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZu-Jr-Qdz">
-                                                <rect key="frame" x="117" y="8" width="175" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Click to go to next screen"/>
-                                                <connections>
-                                                    <segue destination="JXH-oO-FGx" kind="presentation" modalPresentationStyle="fullScreen" id="bV3-tV-J4E"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     </view>
                                 </subviews>
@@ -642,7 +633,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="gU3-7s-3iX"/>
+        <segue reference="5bt-vi-YK4"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="maincity" width="496" height="355"/>
