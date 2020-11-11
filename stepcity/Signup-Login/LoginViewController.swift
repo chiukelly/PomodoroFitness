@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import HealthKit
 
 class LoginViewController: UIViewController {
 
@@ -23,22 +24,35 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var errorLabel: UILabel!
     
+    var val = 0
+    let healthStore = HKHealthStore()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        authorizeHealthKit()
 
         // Do any additional setup after loading the view.
         setUpElements()
+        
+    }
+    
+    func authorizeHealthKit() {
+        let read = Set([HKObjectType.quantityType(forIdentifier: .stepCount)!])
+        let share = Set([HKObjectType.quantityType(forIdentifier: .stepCount)!])
+        healthStore.requestAuthorization(toShare: share, read: read) { (chk, error) in
+        if(chk) {
+            print("permission granted")
+            //self.getTodayTotalStepCounts()
+            }
+        }
     }
 
-    
-    
-    
     func setUpElements() {
         // Hide error label
         errorLabel.alpha = 0
-        
-        title1Text.font = UIFont(name: "PixelOperatorMono-Bold", size:60)
-        title2Text.font = UIFont(name: "PixelOperatorMono-Bold", size:60)
+        title1Text.font = UIFont(name: "PixelOperatorMono-Bold", size:70)
+        title2Text.font = UIFont(name: "PixelOperatorMono-Bold", size:70)
 
         //Roboto-Light
     }

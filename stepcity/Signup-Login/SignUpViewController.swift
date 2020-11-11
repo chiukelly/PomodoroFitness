@@ -37,7 +37,7 @@ class SignUpViewController: UIViewController {
         errorLabel.alpha = 0
         
         // Style the elements
-        createAccountText.font = UIFont(name: "PixelOperatorMono-Bold", size:60)
+        createAccountText.font = UIFont(name: "PixelOperatorMono-Bold", size:30)
 
     }
     
