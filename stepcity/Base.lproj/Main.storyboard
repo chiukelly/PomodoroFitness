@@ -242,6 +242,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="kfV-Lf-ghB" kind="relationship" relationship="viewControllers" id="Bur-ce-yep"/>
@@ -254,11 +255,13 @@
             </objects>
             <point key="canvasLocation" x="-86" y="-291"/>
         </scene>
-        <!--My City-->
+        <!--Navigation Controller-->
         <scene sceneID="55Z-ea-DDc">
             <objects>
                 <navigationController id="kfV-Lf-ghB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My City" id="X8C-Vd-4SK"/>
+                    <tabBarItem key="tabBarItem" title="" image="office" selectedImage="office" id="X8C-Vd-4SK">
+                        <color key="badgeColor" red="0.16862745100000001" green="0.2274509804" blue="0.84313725490000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="suR-s6-vme">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -320,11 +323,13 @@
             </objects>
             <point key="canvasLocation" x="690" y="1148"/>
         </scene>
-        <!--Friends-->
+        <!--Navigation Controller-->
         <scene sceneID="qlH-p2-fNp">
             <objects>
                 <navigationController id="s8u-Vt-9Ek" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Friends" id="sA1-Kz-MgD"/>
+                    <tabBarItem key="tabBarItem" title="" image="friends" selectedImage="friends" id="sA1-Kz-MgD">
+                        <color key="badgeColor" red="0.16862745100000001" green="0.2274509804" blue="0.84313725490000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OfD-Wx-Bnb">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -337,11 +342,13 @@
             </objects>
             <point key="canvasLocation" x="690" y="425"/>
         </scene>
-        <!--Build-->
+        <!--Navigation Controller-->
         <scene sceneID="Ljr-JE-RCa">
             <objects>
                 <navigationController id="kcY-tw-Emp" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Build" id="fTd-zi-KWV"/>
+                    <tabBarItem key="tabBarItem" title="" image="hammer" selectedImage="hammer" id="fTd-zi-KWV">
+                        <color key="badgeColor" red="0.16862745100000001" green="0.2274509804" blue="0.84313725490000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bQT-KI-rEr">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -554,6 +561,16 @@
                                     </label>
                                     <view contentMode="scaleToFill" verticalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="dv3-2m-6dD">
                                         <rect key="frame" x="16" y="598" width="382" height="212"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSV-EB-YIz">
+                                                <rect key="frame" x="150" y="91" width="83" height="63"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="click to load"/>
+                                                <connections>
+                                                    <segue destination="edv-XD-EhH" kind="presentation" modalPresentationStyle="fullScreen" id="diZ-hE-17B"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     </view>
                                 </subviews>
@@ -590,19 +607,33 @@
                     <view key="view" contentMode="scaleToFill" id="5nI-pn-cZe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lua-8A-RK6">
+                                <rect key="frame" x="186" y="359" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16862745100000001" green="0.2274509804" blue="0.84313725490000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="bdh-hG-Jlk"/>
                     </view>
+                    <connections>
+                        <outlet property="loadingText" destination="lua-8A-RK6" id="44X-hg-p8W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wWf-un-KMg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="735" y="-960"/>
+            <point key="canvasLocation" x="734.78260869565224" y="-960.26785714285711"/>
         </scene>
-        <!--Settings-->
+        <!--Navigation Controller-->
         <scene sceneID="4Ht-c6-MpP">
             <objects>
                 <navigationController id="Co2-52-vNi" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" id="QGr-l7-Ubq"/>
+                    <tabBarItem key="tabBarItem" title="" image="settings" selectedImage="settings" id="QGr-l7-Ubq">
+                        <color key="badgeColor" red="0.16862745100000001" green="0.2274509804" blue="0.84313725490000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fjb-MZ-0pO">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -633,9 +664,13 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="5bt-vi-YK4"/>
+        <segue reference="gU3-7s-3iX"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="friends" width="31" height="27"/>
+        <image name="hammer" width="27" height="27"/>
         <image name="maincity" width="496" height="355"/>
+        <image name="office" width="27" height="27"/>
+        <image name="settings" width="27" height="27"/>
     </resources>
 </document>

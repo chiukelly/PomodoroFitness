@@ -57,6 +57,8 @@
 	<array>
 		<string>PixelOperatorSC-bold.ttf</string>
 		<string>PixelOperatorMono-Bold.ttf</string>
+		<string>PixelOperator-Regular.ttf</string>
+		<string>Roboto-Light.ttf</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

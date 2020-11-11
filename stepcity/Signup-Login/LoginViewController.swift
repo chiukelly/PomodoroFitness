@@ -37,7 +37,7 @@ class LoginViewController: UIViewController {
         // Hide error label
         errorLabel.alpha = 0
         
-        // title1Text.font = UIFont(name: "PixelOperatorSC-Bold", size:60)
+        title1Text.font = UIFont(name: "PixelOperator-Bold", size:60)
     }
     
     // Check the fields and validate that the data is correct
@@ -80,7 +80,14 @@ class LoginViewController: UIViewController {
                     self.errorLabel.alpha = 1
                 }
                 else {
-                    
+                    for family: String in UIFont.familyNames
+                    {
+                        print(family)
+                        for names: String in UIFont.fontNames(forFamilyName: family)
+                        {
+                            print("== \(names)")
+                        }
+                    }
                     self.performSegue(withIdentifier: "loginSegueIdentifier", sender: nil)
 
 //                    let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
