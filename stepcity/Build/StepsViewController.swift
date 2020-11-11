@@ -10,21 +10,25 @@ import UIKit
 
 class StepsViewController: UIViewController {
 
+    var count = 100
+   
+    @IBOutlet weak var goalStepsText: UILabel!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        goalStepsText.layer.cornerRadius = 10.0
+        goalStepsText.clipsToBounds = true
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func increaseSteps(_ sender: Any) {
+        count += 100
+        goalStepsText.text = "\(count)" + " "
     }
-    */
-
+    
+    
+    @IBAction func decreaseSteps(_ sender: Any) {
+        count -= 100
+        goalStepsText.text = "\(count)" + " "
+    }
 }
