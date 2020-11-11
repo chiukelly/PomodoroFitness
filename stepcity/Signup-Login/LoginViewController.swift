@@ -37,7 +37,10 @@ class LoginViewController: UIViewController {
         // Hide error label
         errorLabel.alpha = 0
         
-        title1Text.font = UIFont(name: "PixelOperator-Bold", size:60)
+        title1Text.font = UIFont(name: "PixelOperatorMono-Bold", size:60)
+        title2Text.font = UIFont(name: "PixelOperatorMono-Bold", size:60)
+
+        //Roboto-Light
     }
     
     // Check the fields and validate that the data is correct

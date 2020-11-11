@@ -12,6 +12,7 @@ import Firebase
 
 class SignUpViewController: UIViewController {
 
+    @IBOutlet weak var createAccountText: UILabel!
     @IBOutlet weak var emailText: UITextField!
     
     @IBOutlet weak var nameText: UITextField!
@@ -36,6 +37,8 @@ class SignUpViewController: UIViewController {
         errorLabel.alpha = 0
         
         // Style the elements
+        createAccountText.font = UIFont(name: "PixelOperatorMono-Bold", size:60)
+
     }
     
     func isPasswordValid(_ password : String) -> Bool {

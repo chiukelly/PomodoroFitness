@@ -588,6 +588,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="3do-ak-Oyo"/>
                     <connections>
+                        <outlet property="createAccountText" destination="B9j-mZ-Az6" id="hN2-6n-NLo"/>
                         <outlet property="emailText" destination="E1B-sB-KE0" id="cJg-R6-Atu"/>
                         <outlet property="errorLabel" destination="9ob-H1-mme" id="R5b-tW-lGx"/>
                         <outlet property="nameText" destination="jUH-zx-ipq" id="3C5-zm-VvH"/>
@@ -664,7 +665,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="gU3-7s-3iX"/>
+        <segue reference="5bt-vi-YK4"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="friends" width="31" height="27"/>
