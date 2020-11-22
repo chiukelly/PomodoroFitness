@@ -300,6 +300,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="floor" translatesAutoresizingMaskIntoConstraints="NO" id="9hg-4U-Q4s">
+                                <rect key="frame" x="87" y="582" width="240" height="100"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bqa-KU-vYD">
                                 <rect key="frame" x="116.5" y="138" width="187.5" height="84"/>
                                 <subviews>
@@ -332,25 +335,66 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.16862745100000001" green="0.2274509804" blue="0.84313725490000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.16862745100000001" green="0.2274509804" blue="0.84313725490000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="building1" translatesAutoresizingMaskIntoConstraints="NO" id="sfg-tM-yXl">
-                                <rect key="frame" x="87" y="253" width="247" height="357"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="building1" translatesAutoresizingMaskIntoConstraints="NO" id="sfg-tM-yXl">
+                                <rect key="frame" x="84" y="304" width="246" height="357"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="357" id="OwQ-rb-5fW"/>
+                                </constraints>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ZUH-IS-8Mo">
+                                <rect key="frame" x="51" y="712" width="328" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Lb-6k-DlO">
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <state key="normal" title="edit building">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D8s-ut-jj8">
+                                        <rect key="frame" x="174" y="0.0" width="154" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <state key="normal" title="start stepping">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="k9M-XV-mh2"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.6423685341918014" green="0.7381380561485521" blue="0.95073672279792742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bqa-KU-vYD" firstAttribute="top" secondItem="k9M-XV-mh2" secondAttribute="top" constant="50" id="1Of-OU-10D"/>
+                            <constraint firstItem="9hg-4U-Q4s" firstAttribute="top" secondItem="bqa-KU-vYD" secondAttribute="bottom" constant="360" id="6tN-Jj-qvN"/>
+                            <constraint firstItem="9hg-4U-Q4s" firstAttribute="centerX" secondItem="sfg-tM-yXl" secondAttribute="centerX" id="7n6-rj-R34"/>
+                            <constraint firstItem="ZUH-IS-8Mo" firstAttribute="top" secondItem="9hg-4U-Q4s" secondAttribute="bottom" constant="30" id="APU-45-hlo"/>
+                            <constraint firstItem="9hg-4U-Q4s" firstAttribute="centerX" secondItem="mwN-WV-Q57" secondAttribute="centerX" id="TAX-6K-okn"/>
+                            <constraint firstItem="9hg-4U-Q4s" firstAttribute="leading" secondItem="k9M-XV-mh2" secondAttribute="leading" constant="87" id="arW-Kq-U3F"/>
                             <constraint firstItem="k9M-XV-mh2" firstAttribute="trailing" secondItem="bqa-KU-vYD" secondAttribute="trailing" constant="110" id="b8Q-Ar-ZQB"/>
+                            <constraint firstItem="ZUH-IS-8Mo" firstAttribute="leading" secondItem="k9M-XV-mh2" secondAttribute="leading" constant="51" id="lRe-MF-VWv"/>
+                            <constraint firstItem="ZUH-IS-8Mo" firstAttribute="top" secondItem="sfg-tM-yXl" secondAttribute="bottom" constant="51" id="mH8-ul-yzL"/>
+                            <constraint firstItem="sfg-tM-yXl" firstAttribute="leading" secondItem="k9M-XV-mh2" secondAttribute="leading" constant="84" id="wt6-B4-VO0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Build" largeTitleDisplayMode="always" id="OrV-yb-gJ4"/>
                     <connections>
+                        <outlet property="editBuildingButton" destination="6Lb-6k-DlO" id="LrS-Zk-Tk7"/>
                         <outlet property="goalStepsText" destination="l2E-FZ-rQO" id="Uh6-g1-4p8"/>
+                        <outlet property="startSteppingButton" destination="D8s-ut-jj8" id="2kA-Pa-FGA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wLf-qi-HH0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -721,6 +765,7 @@
         <image name="arrowtriangle.down" catalog="system" width="128" height="124"/>
         <image name="arrowtriangle.up" catalog="system" width="128" height="124"/>
         <image name="building1" width="167" height="444"/>
+        <image name="floor" width="257" height="100"/>
         <image name="friends" width="31" height="27"/>
         <image name="hammer" width="27" height="27"/>
         <image name="maincity" width="496" height="355"/>
